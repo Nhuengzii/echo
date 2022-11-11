@@ -16,6 +16,8 @@
     "discord-speech-recognition": "^3.1.1",
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3",
+    "gtts": "^0.2.1",
+    "libsodium-wrappers": "^0.7.10",
     "queue-typescript": "^1.0.1"
   },
   "devDependencies": {
