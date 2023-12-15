@@ -17,7 +17,7 @@ module.exports = async (client: Client) => {
             if (querry == 'เปิดเพลง') { return }
             await require('../commands/play')(client, voicemessage.member, querry, undefined, queueManager)
         }
-        else if (content.startsWith("เปลี่ยนเพลง")) {
+        else if (["เปลี่ยนเพลง", "ข้ามเพลง"].includes("เปลี่ยนเพลง")) {
             await require('../commands/skip')(voicemessage.guild.id, undefined)
         }
         else if (content.startsWith("ออกไป")) {
